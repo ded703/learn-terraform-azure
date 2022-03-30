@@ -14,6 +14,7 @@ provider "azurerm" {
   features {}
 }
 
+#ajout d'une ressource
 resource "azurerm_resource_group" "terraform-cloud" {
   name     = "TERRAFORM_ESSA"
   location = "francecentral"
