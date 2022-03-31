@@ -16,12 +16,12 @@ provider "azurerm" {
 
 #ajout d'une ressource
 resource "azurerm_resource_group" "rg" {
-  name     = var.ressource_groupe_name
+  name     = var.resource_group_name
   location = "francecentral"
   
    tags = {
      Environment = "Terraform Getting Started"
-     Team = "Datcom"
+     Team = "Datacom"
    }
 }
 # Create a virtual network
