@@ -16,7 +16,7 @@ provider "azurerm" {
 
 #ajout d'une ressource
 resource "azurerm_resource_group" "rg" {
-  name     = "TERRAFORM_ESSA"
+  name     = var.ressource_groupe_name
   location = "francecentral"
   
    tags = {
