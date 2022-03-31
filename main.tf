@@ -18,6 +18,11 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg" {
   name     = "TERRAFORM_ESSA"
   location = "francecentral"
+  
+   tags = {
+     Environment = "Terraform Getting Started"
+     Team = "Datcom"
+   }
 }
 # Create a virtual network
 resource "azurerm_virtual_network" "vnet" {
